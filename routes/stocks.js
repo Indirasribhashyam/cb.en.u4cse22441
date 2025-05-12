@@ -17,7 +17,6 @@ router.get('/:ticker', async (req, res) => {
     });
 });
 
-// GET correlation between two stock tickers
 router.get('/stockcorrelation', async (req, res) => {
     const minutes = parseInt(req.query.minutes);
     const tickers = req.query.ticker;
